@@ -7,8 +7,8 @@
   become_user: meuser
   become_method: su
   vars:
-    home_work_dir: ~/ansible-deploy
-    chain_bin_file_dir: ~/me-deploy/bin
+    home_work_dir: ~/me-deploy
+    chain_bin_file_dir: ~/me-deploy
     hosts_name: servers-chain-test servers-chain-test
     master_group: servers-chain-test
     slaves_group: servers-chain-test
