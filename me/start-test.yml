@@ -1,0 +1,20 @@
+---
+
+- hosts: servers-chain-test servers-chain-test
+  gather_facts: False
+  any_errors_fatal: true
+  become: yes
+  become_user: nieyinliang
+  become_method: su
+  vars:
+    home_work_dir: /home/nieyinliang/workspace/test/me-ansible
+    hosts_name: servers-chain-test servers-chain-test
+    master_group: servers-chain-test
+    slaves_group: servers-chain-test
+    node_count: 2
+    has_root_pwd: false
+    master_node_host_ip: 192.168.0.207
+    validator_begin_node_pos: 1
+    validator_end_node_pos: 2
+  roles:
+    - chain
