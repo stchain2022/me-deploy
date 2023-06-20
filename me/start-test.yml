@@ -17,5 +17,15 @@
     master_node_host_ip: 192.168.0.207
     validator_begin_node_pos: 1
     validator_end_node_pos: 7
+    common:
+      chain_bin_name: me-chaind
+      coin_unit: mec
+      admin_name: admin
+      explorer_backend_bin_name: me-explorer
+      chain_id: mechain
+      keyring_dir: me-chain
+      keyring_backend: test
+      minimum_gas_prices: 200
+
   roles:
     - nyl1001.xd_me
