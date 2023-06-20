@@ -8,6 +8,7 @@
   become_method: su
   vars:
     home_work_dir: /home/user1/me-deploy
+    chain_bin_file_dir: ~/me-deploy/bin
     hosts_name: servers-chain-THA-master servers-chain-THA-slaves
     master_group: servers-chain-THA-master
     slaves_group: servers-chain-THA-slaves

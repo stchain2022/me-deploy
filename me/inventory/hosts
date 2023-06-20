@@ -8,4 +8,4 @@
 # chain-THA-slaves-perf-s04 ansible_host=118.175.0.226 ansible_ssh_user=user1 ansible_ssh_pass=TechFlybird0917516363@@@ index=4 begin_pos=29 end_pos=35
 
 [servers-backend-test]
-backend-test-perf-s02 ansible_host=192.168.0.207 ansible_ssh_user=meuser ansible_ssh_pass=12345678 index=0
+backend-test-perf-s02 ansible_host=192.168.0.207 ansible_ssh_user=meuser ansible_ssh_pass=12345678 index=0 begin_pos=1 end_pos=7
