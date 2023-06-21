@@ -7,7 +7,7 @@
   become_user: nieyinliang
   become_method: su
   vars:
-    home_work_dir: /home/nieyinliang/workspace/test/me-ansible
+    chain_deploy_home_dir: /home/nieyinliang/workspace/test/me-ansible
     chain_bin_file_dir: /home/nieyinliang/workspace/tools/xd-tools/scripts/shell/me/deploy/bin
     hosts_name: servers-chain-local-linux-master servers-chain-local-linux-slaves
     master_group: servers-chain-local-linux-master

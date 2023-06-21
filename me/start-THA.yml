@@ -7,7 +7,7 @@
   become_user: user1
   become_method: su
   vars:
-    home_work_dir: /home/user1/me-deploy
+    chain_deploy_home_dir: /home/user1/me-deploy
     chain_bin_file_dir: ~/me-deploy
     hosts_name: servers-chain-THA-master servers-chain-THA-slaves
     master_group: servers-chain-THA-master
