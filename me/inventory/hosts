@@ -9,3 +9,9 @@
 
 [servers-backend-test]
 backend-test-perf-s02 ansible_host=192.168.0.207 ansible_ssh_user=meuser ansible_ssh_pass=12345678 index=0 begin_pos=1 end_pos=7
+
+[servers-chain-local-linux-master]
+chain-local-linux-master-perf-s02 ansible_host=localhost ansible_ssh_user=nieyinliang ansible_ssh_pass=10011001 index=0 begin_pos=1 end_pos=7
+
+[servers-chain-local-linux-slaves]
+# chain-local-linux-slaves-perf-s02 ansible_host=192.168.0.101 ansible_ssh_user=nieyinliang ansible_ssh_pass=10011001 index=0

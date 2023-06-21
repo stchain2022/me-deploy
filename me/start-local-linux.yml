@@ -1,0 +1,30 @@
+---
+
+- hosts: servers-chain-local-linux-master servers-chain-local-linux-slaves
+  gather_facts: False
+  any_errors_fatal: true
+  become: yes
+  become_user: nieyinliang
+  become_method: su
+  vars:
+    home_work_dir: /home/nieyinliang/workspace/test/me-ansible
+    chain_bin_file_dir: /home/nieyinliang/workspace/tools/xd-tools/scripts/shell/me/deploy/bin
+    hosts_name: servers-chain-local-linux-master servers-chain-local-linux-slaves
+    master_group: servers-chain-local-linux-master
+    slaves_group: servers-chain-local-linux-slaves
+    node_count: 7
+    has_root_pwd: true
+    master_node_host_ip: localhost
+    validator_begin_node_pos: 1
+    validator_end_node_pos: 7
+    common:
+      chain_bin_name: me-chaind
+      coin_unit: mec
+      admin_name: admin
+      explorer_backend_bin_name: me-explorer
+      chain_id: mechain
+      keyring_dir: me-chain
+      keyring_backend: test
+      minimum_gas_prices: 200
+  roles:
+    - nyl1001.xd_me
